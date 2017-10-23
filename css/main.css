@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Abel-Regular";
-  src: url("../assets/fonts/Abel-Regular.ttf");
-}
-
-@font-face {
   font-family: "destain";
   src: url("../assets/fonts/destain.ttf");
 }
@@ -46,15 +41,14 @@ a:hover {
 
 h1 {
     font-size: 3em;
-    font-family:'Abel-Regular';
+    font-family:'destain';
     margin: 0;
-    text-shadow: 2px 2px #ffffff;
     color: #f4a742;
 }
 
 h2 {
   font-size: 2em;
-  font-family: 'Abel-Regular';
+  font-family: 'destain';
   margin: 0.5em 0;
   color: #f4a742;
 }
@@ -74,7 +68,7 @@ ul.posts li {
 }
 
 .date, .meta {
-  font-family: 'Abel-Regular';
+  font-family: 'destain';
   color: #f4a742;
 }
 
