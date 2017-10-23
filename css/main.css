@@ -1,41 +1,67 @@
+@font-face {
+  font-family: "aliens";
+  src: url("../assets/fonts/aliens.ttf");
+}
+
+@font-face {
+  font-family: "destain";
+  src: url("../assets/fonts/destain.ttf");
+}
+
+
 body {
     margin: 60px auto;
     width: 70%;
+    background-image: url("../assets/images/mt cook 2.jpg")
 }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'destain';
     padding: 0px;
     list-style: none;
-    font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
-    color: #999;
+    color: #ffffff;
 }
+
 a:hover {
     text-decoration: underline;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+.blurb {
+  margin: 100px 0
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+h1 {
+    font-size: 4em;
+    font-family:'aliens';
+    margin: 0;
+    text-shadow: 2px 2px #ffffff;
+    color: #f4a742;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'aliens';
+  margin: 0.5em 0;
+  color: #f4a742;
+}
+
+footer {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 2em;
 }
 
 ul.posts li {
