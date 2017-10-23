@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "aliens";
-  src: url("../assets/fonts/aliens.ttf");
+  font-family: "Abel-Regular";
+  src: url("../assets/fonts/Abel-Regular.ttf");
 }
 
 @font-face {
@@ -40,16 +40,16 @@ a:hover {
 }
 
 h1 {
-    font-size: 4em;
-    font-family:'aliens';
+    font-size: 3em;
+    font-family:'Abel-Regular';
     margin: 0;
     text-shadow: 2px 2px #ffffff;
     color: #f4a742;
 }
 
-h2 {
+h2, .date {
   font-size: 2em;
-  font-family: 'aliens';
+  font-family: 'Abel-Regular';
   margin: 0.5em 0;
   color: #f4a742;
 }
