@@ -18,5 +18,11 @@ Some things about me...
 <li>I work for a startup called <a href="http://www.mish.guru">Mish Guru</a>, helping to build their Snapchat management and analytics platform. We work in an open-plan workspace in town and have colleagues all over the world.
 </li>
 
-<li>I have two adorable Burmese cats named Vienna and Ash.</li>
+<li>I have two adorable burmese cats named Vienna and Ash.</li>
+
+<li>I am terrible at updating blogs!!</li>
 </ul>
+
+Let's hope I can fix that last one.
+
+Over and out!

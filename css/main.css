@@ -8,6 +8,11 @@
   src: url("../assets/fonts/destain.ttf");
 }
 
+@font-face {
+  font-family: "garamond";
+  src: url("../assets/fonts/garamond.ttf");
+}
+
 
 body {
     margin: 60px auto;
@@ -68,7 +73,7 @@ ul.posts li {
     list-style: none;
 }
 
-.date {
+.date, .meta {
   font-family: 'Abel-Regular';
   color: #f4a742;
 }
@@ -79,4 +84,16 @@ ul.posts li {
 
 .arrows {
   color: #ffffff;
+}
+
+.post {
+  background-color: rgba(255,255,255,0.8);
+  padding: 2em 7em;
+  line-height: 2;
+  font-family: 'garamond';
+  font-size: 1em;
+}
+
+.post a {
+  color: #f4a742;
 }
