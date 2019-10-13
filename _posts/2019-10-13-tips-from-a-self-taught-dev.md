@@ -4,7 +4,7 @@ title: "Tips from a self-taught dev"
 date: 2019-10-13
 ---
 
-Over five years ago, working as an archivist as the Univeristy of Canterbury, my manager linked me to the website <a href="http://codecademy.com">codecademy</a> with a vague comment of "you might like this". I still remember the homepage -- a signup form with an embedded terminal next to it and a message employing me to write my first line of code: <i>print 'hello world'</i>. Quickly I typed those three words, hit enter, and watched the terminal dutifly spitout my message:
+Over five years ago, working as an archivist as the Univeristy of Canterbury, my manager linked me to the coding-tutorial website <a href="http://codecademy.com">codecademy</a> with a vague comment of "you might like this". I still remember the homepage -- a signup form with an embedded terminal next to it and a message employing me to write my first line of code: <i>print 'hello world'</i>. Quickly I typed those three words, hit enter, and watched the terminal dutifly spitout my message:
 
 <center>hello world</center>
 
