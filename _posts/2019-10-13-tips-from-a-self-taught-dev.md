@@ -14,7 +14,7 @@ In the months that followed it became increasingly clear to me that I wanted to 
 
 Over the next few years I managed to morph my archive job into a technical role but it wasn't until 2017 that I was able to make the leap from an English grad with some technical skills to a real-life bonified software engineer. Often I think about those times, about the things I wish I had known that would have speed up the process of becoming a dev. Overtime I have curated and polished this list into something resembling tips for self-taught developers. I hope that these will be useful for other people looking to make the same journey.
 
-<h2>Use the tools that devs use</h2>
+<h2>Use the same tools as devs</h2>
 
 If you've spent anytime around developers you will know that we love talking about tools. Like a painter knows their paint brushes, and a chef knows their knives, so too does a developer know their code editor, version control software, and database manager. Understanding these tools and how to discuss things about them goes a long way in an interview.
 
