@@ -1,29 +1,96 @@
-@font-face {
-  font-family: "destain";
-  src: url("../assets/fonts/destain.ttf");
-}
-
-@font-face {
-  font-family: "garamond";
-  src: url("../assets/fonts/garamond.ttf");
-}
-
-
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 1em 0;
     background-image: url("../assets/images/mt cook.jpg")
 }
 
-nav ul, footer ul {
-    font-family: 'destain';
-    padding: 0px;
-    list-style: none;
+nav {
+    margin: 2em auto;
+    font-family:'Amatic SC', cursive;
+    position: fixed;
+    width: 200px;
+    text-align: center;
 }
 
-nav ul li, footer ul li {
+nav h1 {
+    font-size: 3em;
+    margin: 0;
+    width: 300px;
+}
+
+nav h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.blurb {
+    width: 200px;
+    margin: 1em 0;
+    color: #f4a742;
+}
+
+.profile {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 150px;
+} 
+
+nav ul {
+    padding: 0px;
+    list-style: none;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1em;
+}
+
+.container {
+    width: 70%;
+    margin: 0 5% 0 25%;
+}
+
+.post {
+    background-color: rgba(255,255,255,1);
+    padding: 2em 6em;
+    border-radius: 2em;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    font-family:'Amatic SC', cursive;
+}
+
+.post-date {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1em;
+}
+
+.post-title {
+     text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+    line-height: 1em;
+}
+
+
+.post a {
+    color: #f4a742;
 }
 
 a {
@@ -35,59 +102,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.blurb {
-  margin: 100px 0
+.post h2 {
+    font-family: 'Amatic SC', cursive;
 }
 
-h1 {
-    font-size: 3em;
-    font-family:'destain';
-    margin: 0;
-    color: #f4a742;
-}
-
-h2 {
-  font-size: 2em;
-  font-family: 'destain';
-  margin: 0.5em 0;
-  color: #f4a742;
-}
-
-footer {
+.read-more .default {
+    font-family:'Amatic SC', cursive;
     font-size: 2em;
-    color: #ffffff;
+    text-decoration: underline;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 2em;
-}
-
-ul.posts li {
-    list-style: none;
-}
-
-.date, .meta {
-  font-family: 'destain';
-  color: #f4a742;
-}
-
-.post-title {
-  font-family: 'destain';
-}
-
-.arrows {
-  color: #ffffff;
-}
-
-.post {
-  background-color: rgba(255,255,255,0.8);
-  padding: 2em 7em;
-  line-height: 2;
-  font-family: 'garamond';
-  font-size: 1em;
-}
-
-.post a {
-  color: #f4a742;
+.read-more .show {
+    display: none;
 }

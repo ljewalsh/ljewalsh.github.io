@@ -1,0 +1,332 @@
+.simple_arc, .upside_down_arc { 
+    display: block; 
+    margin: 0 auto;
+    width:150px; 
+    height: 50px;
+}
+
+.simple_arc span, .upside_down_arc span {
+    text-align: center;
+}
+
+.simple_arc>span[class^=w]:nth-of-type(n+0), .upside_down_arc>span[class^=w]:nth-of-type(n+0) {
+    display:block; 
+    position:absolute;
+    -moz-transform-origin:50% 100%; 
+    -webkit-transform-origin:50% 100%; 
+    -o-transform-origin:50% 100%; 
+    -ms-transform-origin:50% 100%; 
+    transform-origin:50% 100%; 
+}
+
+.simple_arc span{
+    font-size:1em;
+    font-weight:regular;
+    font-style:normal;
+    line-height:0.65; 
+    white-space:pre; 
+    overflow:visible; 
+    padding:0px;
+}
+
+.simple_arc .w0 {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+    width: 30px; 
+    height: 24px; 
+    left: 4px; 
+    top: 50px;
+}
+
+.simple_arc .w1 { 
+    -moz-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg); 
+    transform: rotate(-35deg);
+    width: 30px; 
+    height: 24px; 
+    left: 23px; 
+    top: 37.5px;
+}
+
+.simple_arc .w2 {
+    -moz-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg); 
+    transform: rotate(-25deg);
+    width: 30px; 
+    height: 24px; 
+    left: 42px; 
+    top: 25px;
+}
+
+.simple_arc .w3 {
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg); 
+    transform: rotate(-15deg);
+    width: 30px; 
+    height: 24px; 
+    left: 61px; 
+    top: 12.5px;
+}
+
+.simple_arc .w4 {
+    width: 30px; 
+    height: 24px; 
+    left: 80px; 
+    top: 0px;
+}
+
+.simple_arc .w5 {
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg); 
+    transform: rotate(15deg);
+    width: 30px; 
+    height: 24px; 
+    left: 99px; 
+    top: 12.5px;
+}
+
+.simple_arc .w6 {
+    -moz-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg); 
+    transform: rotate(25deg); 
+    width: 30px; 
+    height: 24px; 
+    left: 118px; 
+    top: 25px;
+}
+
+.simple_arc .w7 {
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg); 
+    transform: rotate(35deg);
+    width: 30px; 
+    height: 24px; 
+    left: 137px; 
+    top: 37.5px;
+}
+
+.simple_arc .w8 {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+    width: 30px; 
+    height: 24px; 
+    left: 156px; 
+    top: 50px;
+}
+
+.upside_down_arc .w0 {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 11px;
+    height: 24px;
+    left: 4px;
+    top: 160px;
+}
+
+.upside_down_arc .w1 {
+    -moz-transform: rotate(39.4deg);
+    -webkit-transform: rotate(39.4deg);
+    -o-transform: rotate(39.4deg);
+    -ms-transform: rotate(39.4deg);
+    transform: rotate(39.4deg);
+    width: 11px;
+    height: 24px;
+    left: 15px;
+    top: 173px;
+}
+
+.upside_down_arc .w2 {
+    -moz-transform: rotate(33.8deg);
+    -webkit-transform: rotate(33.8deg);
+    -o-transform: rotate(33.8deg);
+    -ms-transform: rotate(33.8deg);
+    transform: rotate(33.8deg);
+    width: 11px;
+    height: 24px;
+    left: 26px;
+    top: 186px;
+}
+
+.upside_down_arc .w3 {
+    -moz-transform: rotate(28.2deg);
+    -webkit-transform: rotate(28.2deg);
+    -o-transform: rotate(28.2deg);
+    -ms-transform: rotate(28.2deg);
+    transform: rotate(28.2deg);
+    width: 11px;
+    height: 24px;
+    left: 37px;
+    top: 199px;
+}
+
+.upside_down_arc .w4 {
+    -moz-transform: rotate(22.6deg);
+    -webkit-transform: rotate(22.6deg);
+    -o-transform: rotate(22.6deg);
+    -ms-transform: rotate(22.6deg);
+    transform: rotate(22.6deg);
+    width: 11px;
+    height: 24px;
+    left: 48px;
+    top: 212px;
+}
+
+.upside_down_arc .w5 {
+    -moz-transform: rotate(16.6deg);
+    -webkit-transform: rotate(16.6deg);
+    -o-transform: rotate(16.6deg);
+    -ms-transform: rotate(16.6deg);
+    transform: rotate(16.6deg);
+    width: 11px;
+    height: 24px;
+    left: 59px;
+    top: 225px;
+}
+
+.upside_down_arc .w6 {
+    -moz-transform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    transform: rotate(11deg);
+    width: 11px;
+    height: 24px;
+    left: 70px;
+    top: 238px;
+}
+
+.upside_down_arc .w7 {
+    -moz-transform: rotate(5.4deg);
+    -webkit-transform: rotate(5.4deg);
+    -o-transform: rotate(5.4deg);
+    -ms-transform: rotate(5.4deg);
+    transform: rotate(5.4deg);
+    width: 11px;
+    height: 24px;
+    left: 81px;
+    top: 200px;
+}
+
+.upside_down_arc .w8 {
+    width: 11px;
+    height: 24px;
+    left: 92px;
+    top: 200px;
+}
+
+.upside_down_arc .w9 {
+    -moz-transform: rotate(-5.4deg);
+    -webkit-transform: rotate(-5.4deg);
+    -o-transform: rotate(-5.4deg);
+    -ms-transform: rotate(-5.4deg);
+    transform: rotate(-5.4deg);
+    width: 11px;
+    height: 24px;
+    left: 103px;
+    top: 200px;
+}
+
+.upside_down_arc .w10 {
+    -moz-transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+    -o-transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+    width: 11px;
+    height: 24px;
+    left: 114px;
+    top: 200px;
+}
+
+.upside_down_arc .w11 {
+    -moz-transform: rotate(-16.6deg);
+    -webkit-transform: rotate(-16.6deg);
+    -o-transform: rotate(-16.6deg);
+    -ms-transform: rotate(-16.6deg);
+    transform: rotate(-16.6deg);
+    width: 11px;
+    height: 24px;
+    left: 125px;
+    top: 200px;
+}
+
+.upside_down_arc .w12 {
+    -moz-transform: rotate(-22.6deg);
+    -webkit-transform: rotate(-22.6deg);
+    -o-transform: rotate(-22.6deg);
+    -ms-transform: rotate(-22.6deg);
+    transform: rotate(-22.6deg);
+    width: 11px;
+    height: 24px;
+    left: 136px;
+    top: 200px;
+}
+
+.upside_down_arc .w13 {
+    -moz-transform: rotate(-28.2deg);
+    -webkit-transform: rotate(-28.2deg);
+    -o-transform: rotate(-28.2deg);
+    -ms-transform: rotate(-28.2deg);
+    transform: rotate(-28.2deg);
+    width: 11px;
+    height: 24px;
+    left: 147px;
+    top: 200px;
+}
+
+.upside_down_arc .w14 {
+    -moz-transform: rotate(-33.8deg);
+    -webkit-transform: rotate(-33.8deg);
+    -o-transform: rotate(-33.8deg);
+    -ms-transform: rotate(-33.8deg);
+    transform: rotate(-33.8deg);
+    width: 11px;
+    height: 24px;
+    left: 158px;
+    top: 200px;
+}
+
+.upside_down_arc .w15 {
+    -moz-transform: rotate(-39.4deg);
+    -webkit-transform: rotate(-39.4deg);
+    -o-transform: rotate(-39.4deg);
+    -ms-transform: rotate(-39.4deg);
+    transform: rotate(-39.4deg);
+    width: 11px;
+    height: 24px;
+    left: 169px;
+    top: 200px;
+}
+
+.upside_down_arc .w16 {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 11px;
+    height: 24px;
+    left: 180px;
+    top: 200px;
+}

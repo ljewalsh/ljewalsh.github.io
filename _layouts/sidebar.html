@@ -1,10 +1,8 @@
 ---
-layout: default
-title: Lucy-Jane Walsh's Blog
+layout: index
+title: Sidebar
 ---
-	<h1>{{ page.title }}</h1>
 	<ul class="posts">
-
 	  {% for post in site.posts %}
 	    <li><span class="date">{{ post.date | date_to_string }}</span> <span class="arrows">»</span> <a href="{{ post.url }}" class='post-title' title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}

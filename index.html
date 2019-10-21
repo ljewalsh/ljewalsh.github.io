@@ -2,7 +2,27 @@
 layout: default
 title: Lucy-Jane Walsh
 ---
-<div class="blurb">
-	<h1>LUCY-JANE WALSH</h1>
-	<h2>SOFTWARE ENGINEER</h2>
-</div><!-- /.blurb -->
+
+<div class="blog">
+    {% for post in site.posts %}
+    <div class="post">
+        <div class='header'>
+            <h2 class="post-date">{{ post.date | date_to_string }}</h2>
+            <h2 class="post-title">{{ post.title }}</h2>
+        </div>
+        <div class="post-body">
+            {% if post.content contains "<!-- more -->" %}
+            {{ post.content | split:"<!-- more -->" | first % }}
+            <div class="read-more">
+                <a class="default" onClick=onReadMore()>Read more...</a>
+                <div class="show">
+                {{ post.content | split:"<!-- more -->" | last % }}
+                </div>
+            </div>
+            {% else %}
+            {{ post.content }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
