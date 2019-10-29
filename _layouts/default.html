@@ -5,17 +5,18 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans&display=swap" rel="stylesheet">
         <script>
-            function onReadMore(){
-                const [ readMore ] = document.getElementsByClassName('default');
-                const [ showMore ] = document.getElementsByClassName('show');
-                if (readMore.innerHTML === 'Read more...'){
-                    readMore.innerHTML = 'Read Less...'
-                    showMore.style.display = 'block';
+            function onReadMore(index){
+                const adjustedIndex = index - 1
+                const readMoreElements = document.getElementsByClassName('default');
+                const showMoreElements = document.getElementsByClassName('show');
+                if (readMoreElements[adjustedIndex].innerHTML === 'Read more...'){
+                    readMoreElements[adjustedIndex].innerHTML = 'Read Less...'
+                    showMoreElements[adjustedIndex].style.display = 'block';
                 }
                 else {
 
-                    readMore.innerHTML = 'Read more...'
-                showMore.style.display = 'none';
+                    readMoreElements[adjustedIndex].innerHTML = 'Read more...'
+                showMoreElements[adjustedIndex].style.display = 'none';
 
             }
             }

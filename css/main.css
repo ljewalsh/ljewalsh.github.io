@@ -106,16 +106,26 @@ a:hover {
     font-family: 'Amatic SC', cursive;
 }
 
+.post .list {
+    list-style: decimal;
+}
+
+.post .list li {
+    margin: 1em 0;
+}
+
 .post img {
     width: 80%;
     border-radius: 0.5em;
+    margin-top: 0.5em;
 }
 
 .post .code {
     display: inline;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0 1em;
+    background-color: rgba(27,31,35,.05);
+    color: #000000;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
 }
 
 .read-more .default {
