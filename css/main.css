@@ -106,6 +106,18 @@ a:hover {
     font-family: 'Amatic SC', cursive;
 }
 
+.post img {
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.post .code {
+    display: inline;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 1em;
+}
+
 .read-more .default {
     font-family:'Amatic SC', cursive;
     font-size: 2em;
