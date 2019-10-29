@@ -14,7 +14,7 @@ title: Lucy-Jane Walsh
             {% if post.content contains "<!-- more -->" %}
             {{ post.content | split:"<!-- more -->" | first % }}
             <div class="read-more">
-                <a class="default" onClick=onReadMore()>Read more...</a>
+                <a class="default" onClick=onReadMore({{forloop.index}})>Read more...</a>
                 <div class="show">
                 {{ post.content | split:"<!-- more -->" | last % }}
                 </div>
