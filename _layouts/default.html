@@ -4,61 +4,24 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans&display=swap" rel="stylesheet">
-        <script>
-            function onReadMore(index){
-                const adjustedIndex = index - 1
-                const readMoreElements = document.getElementsByClassName('default');
-                const showMoreElements = document.getElementsByClassName('show');
-                if (readMoreElements[adjustedIndex].innerHTML === 'Read more...'){
-                    readMoreElements[adjustedIndex].innerHTML = 'Read Less...'
-                    showMoreElements[adjustedIndex].style.display = 'block';
-                }
-                else {
-
-                    readMoreElements[adjustedIndex].innerHTML = 'Read more...'
-                showMoreElements[adjustedIndex].style.display = 'none';
-
-            }
-            }
-        </script>
+        <script src="../assets/js/readMore.js"></script>
     </head>
     <body>
         <nav>
             <div class="blurb">
-                <h1 class='simple_arc'>
-                    <span class='w0'>L</span>
-                    <span class='w1'>U</span>
-                    <span class='w2'>C</span>
-                    <span class='w3'>Y</span>
-                    <span class='w4'>-</span>
-                    <span class='w5'>J</span>
-                    <span class='w6'>A</span>
-                    <span class='w7'>N</span>
-                    <span class='w8'>E</span>
-                </h1>
+                <h1>Lucy-Jane</h1>
                 <div class="profile">
-                    <img src="../assets/images/Lucy-Jane.jpeg"/>
+                    {% assign min = 1 %}
+                    {% assign max = 4 %}
+                    {% assign diff = max | minus: min %}
+                    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+                    {% capture image %}
+                    "../assets/images/me{{ randomNumber }}.png"
+                    {% endcapture %}
+                    <img src={{ image }}/>
                 </div>
-                <h2 class='upside_down_arc'>
-                    <span class='w0'>S</span>
-                    <span class='w1'>O</span>
-                    <span class='w2'>F</span>
-                    <span class='w3'>T</span>
-                    <span class='w4'>W</span>
-                    <span class='w5'>A</span>
-                    <span class='w6'>R</span>
-                    <span class='w7'>E</span>
-                </h2>
-                <h2>
-                    <span class='w9'>E</span>
-                    <span class='w10'>N</span>
-                    <span class='w11'>G</span>
-                    <span class='w12'>I</span>
-                    <span class='w13'>N</span>
-                    <span class='w14'>E</span>
-                    <span class='w15'>E</span>
-                    <span class='w16'>R</span>
-                </h2>
+                <h2>Software</h2>
+                <h2>Engineer</h2>
             </div>
             <ul>
                 <li><a href="https://www.linkedin.com/in/lucy-jane-walsh-63454248/">Linkedin</a></li>
