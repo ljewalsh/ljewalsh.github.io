@@ -4,7 +4,7 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans&display=swap" rel="stylesheet">
-        <script src="../assets/js/readMore.js"></script>
+        <script src="/assets/js/readMore.js"></script>
     </head>
     <body>
         <nav>
@@ -16,7 +16,7 @@
                     {% assign diff = max | minus: min %}
                     {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
                     {% capture image %}
-                    "../assets/images/me{{ randomNumber }}.png"
+                    "/assets/images/me{{ randomNumber }}.png"
                     {% endcapture %}
                     <img src={{ image }}/>
                 </div>

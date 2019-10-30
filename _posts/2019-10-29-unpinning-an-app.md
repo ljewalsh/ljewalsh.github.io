@@ -31,7 +31,7 @@ I have no plans to abuse what I have found. It just makes me feel good to crack 
 
 <p>For apps without certificate pinning, this should be all you need to begin sniffing requests. Unfortunately, with our app, the requests fail.</p>
 
-<img src="../assets/images/posts/failed-request.png"/>
+<img src="/assets/images/posts/failed-request.png"/>
 
 This is where frida comes in.
 
@@ -46,11 +46,11 @@ Setting up frida is pretty easy:
 First, <a href="https://developer.android.com/studio/debug/dev-options">toggle the developer settings</a> on your phone and make sure Android Debugging is enabled (you can also connect to your phone over the network using the 'adb connect' command if you do not have a USB cable handy) 
 </li>
 <li>Open a terminal and type <span class="code">adb devices</span> to confirm your device is available:
-<img src="../assets/images/posts/adb-devices.png"/>
+<img src="/assets/images/posts/adb-devices.png"/>
 </li>
 <li>Make sure adb is running as root: <span class="code">adb root</span></li>
 <li>Use the <span class="code">adb push</span> command to push frida-server to your phone:
-<img src="../assets/images/posts/adb-push.png"/>
+<img src="/assets/images/posts/adb-push.png"/>
 </li>
 <li>Change the permissions of the server using <div class="code">adb shell chmod 755 /data/local/tmp/frida</div></li>
 <li>Confirm the version of frida-server matches what you installed using <span class="code">adb shell /data/local/tmp/frida --version</span>
@@ -58,11 +58,11 @@ First, <a href="https://developer.android.com/studio/debug/dev-options">toggle t
 
 <li>
 Once frida is on your phone, you need to downgrade SELinux to "Permissive" using <span class="code">adb shell setenforce 0 & adb shell getenforce</span>:
-<img src="../assets/images/posts/setenforce.png"/>
+<img src="/assets/images/posts/setenforce.png"/>
 </li>
 <li>
 You should now be able to run the frida server using <span class="code">adb shell /data/local/tmp/frida&</span>
-<img src="../assets/images/posts/start-frida.png"/>
+<img src="/assets/images/posts/start-frida.png"/>
 </li>
 </ul>
 
@@ -99,7 +99,7 @@ You should now be inside the frida REPL. Go ahead and copy the above code into t
 
 Now head back over to Charles. Hopefully you will now be able to sniff requests!
 
-<img src="../assets/images/posts/charles.jpeg"/>
+<img src="/assets/images/posts/charles.jpeg"/>
 
 If not, I'm sorry but you're out of luck. The app probably has pinning built into it and you are going to have to some more drastic things to disable it. Perhaps another post for another time?
 
