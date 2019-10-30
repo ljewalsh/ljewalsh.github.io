@@ -20,15 +20,16 @@ I have no plans to abuse what I have found. It just makes me feel good to crack 
 <li>A copy of the <a href="https://www.charlesproxy.com/">Charles Web Debugging Proxy App</a></li>
 <li>The <a href="https://developer.android.com/studio/command-line/adb?gclid=EAIaIQobChMIoPHAkbXA5QIVCSQrCh280AMZEAAYASAAEgKdKvD_BwE">adb</a> command-line tool installed on your computer</li>
 <li>The latest version of <a href="https://github.com/frida/frida/releases">frida-server</a> (make sure you download the server and not the dev kit or tools)</li>
+<li><a href="https://www.frida.re/docs/frida-cli/">frida-cli</a> installed on your computer</li>
 </ul>
 
 <h2>Installing the Charles Root Certificate</h2>
 
-Once you've downloaded and installed the above tools (except for frida-server - we will explain how to use that later), you will need to install the Charles root certificate on your phone. This is what we will be using to handle the SSL handshake (more of this <a href="https://www.charlesproxy.com/documentation/proxying/ssl-proxying/">here</a>).
+<p>Once you've downloaded and installed the above tools (except for frida-server - we will explain how to use that later), you will need to install the Charles root certificate on your phone. This is what we will be using to handle the SSL handshake (more of this <a href="https://www.charlesproxy.com/documentation/proxying/ssl-proxying/">here</a>).</p>
 
-To do this, open Charles and go to the help section. Scroll down to SSL Proxying > Install Charles Root Certificate on Mobile or Remote Browser. Follow the instructions outlined here to install your unique certificate.
+<p>To do this, open Charles and go to the help section. Scroll down to SSL Proxying > Install Charles Root Certificate on Mobile or Remote Browser. Follow the instructions outlined here to install your unique certificate.</p>
 
-For apps without certificate pinning, this should be all you need to begin sniffing requests. Unfortunately, with our app, the requests fail:
+<p>For apps without certificate pinning, this should be all you need to begin sniffing requests. Unfortunately, with our app, the requests fail.</p>
 
 <img src="../assets/images/posts/failed-request.png"/>
 
@@ -71,8 +72,7 @@ Floating around the internet is a universal snippet of code for disabling certif
 
 To reverse pinning, all we need to do is hook into the app and run the following code:
 
-<pre class="highlight">
-<code>
+{% highlight javascript %}
 Java.perform(function() {
 
     var array_list = Java.use("java.util.ArrayList");
@@ -84,6 +84,25 @@ Java.perform(function() {
     }
 
 },0);
-</code>
-</pre>
+{% endhighlight %}
 
+<p>We can do this using frida-cli. Go ahead and open another terminal and attach to your process:</p>
+
+<div class="code">frida -U process-name</div>
+
+
+Make sure you use the <span class="code">-U</span> command to specify that you want to attach to the USB device and not your computer
+
+You can find the process name using <a href="https://www.frida.re/docs/frida-ps/">frida-ps</a>
+
+You should now be inside the frida REPL. Go ahead and copy the above code into the REPL. If everything goes well...nothing should happen.</p>
+
+Now head back over to Charles. Hopefully you will now be able to sniff requests!
+
+<img src="../assets/images/posts/charles.jpeg"/>
+
+If not, I'm sorry but you're out of luck. The app probably has pinning built into it and you are going to have to some more drastic things to disable it. Perhaps another post for another time?
+
+And what was that security risk, you ask?
+
+They seem to be setting the price on the client side :s
